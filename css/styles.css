@@ -6,7 +6,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
+.row>* {
+  padding-right: none !important;
+}
 /* Навбар */
 .navbar-light .navbar-brand,
 .navbar-light .navbar-nav {
