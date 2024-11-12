@@ -7,7 +7,8 @@
     <title>Демико - услуги химчистки в г. Барановичи</title>
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!-- Подключение AOS для анимаций -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Подключение AOS для анимаций -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
@@ -111,19 +112,21 @@
 
     <!-- Главный экран -->
     <div class="parallax-container">
+        <img src="img/index/main-screen.webp" alt="Профессиональная химчистка" class="parallax-image">
         <div class="parallax-content">
             <h1>Профессиональная химчистка</h1>
             <p>Ковры, мебель, салоны автомобилей и многое другое</p>
             <a class="btn btn-light btn-lg" href="#services" role="button">Наши услуги</a>
         </div>
     </div>
+
     <!-- Услуги -->
     <section id="services" class="container my-5">
         <h2 class="text-center mb-4">Наши услуги</h2>
         <div class="row">
             <div class="col-sm-12 col-lg-6 mb-3">
                 <div class="card">
-                    <img src="img/index/furniture.webp" class="card-img-top" alt="Химчистка мебели" >
+                    <img src="img/index/furniture.webp" class="card-img-top" alt="Химчистка мебели">
                     <div class="card-body">
                         <p class="card-title">Химчистка мебели</p>
                         <p class="card-text">Цена: от 10 руб.</p>
@@ -133,7 +136,7 @@
             </div>
             <div class="col-sm-12 col-lg-6 mb-3">
                 <div class="card">
-                    <img src="img/index/сarpet.webp" class="card-img-top" alt="Химчистка мебели" >
+                    <img src="img/index/сarpet.webp" class="card-img-top" alt="Химчистка мебели">
                     <div class="card-body">
                         <p class="card-title">Химчистка ковров</p>
                         <p class="card-text">Цена: от 10 руб.</p>
@@ -143,7 +146,7 @@
             </div>
             <div class="col-sm-12 col-lg-6 mb-3">
                 <div class="card">
-                    <img src="img/index/mattres.webp" class="card-img-top" alt="Химчистка мебели" >
+                    <img src="img/index/mattres.webp" class="card-img-top" alt="Химчистка мебели">
                     <div class="card-body">
                         <p class="card-title">Химчистка матрасов</p>
                         <p class="card-text">Цена: от 10 руб.</p>
@@ -153,7 +156,7 @@
             </div>
             <div class="col-sm-12 col-lg-6 mb-3">
                 <div class="card">
-                    <img src="img/index/car.webp" class="card-img-top" alt="Химчистка мебели" >
+                    <img src="img/index/car.webp" class="card-img-top" alt="Химчистка мебели">
                     <div class="card-body">
                         <p class="card-title">Химчистка салонов авто</p>
                         <p class="card-text">Цена: от 10 руб.</p>
@@ -221,7 +224,7 @@
 
 
     <!-- Блок Отзывы -->
-    <section id="reviews" class="container my-5" >
+    <section id="reviews" class="container my-5">
         <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
         <p class="text-center">Наши клиенты всегда остаются довольны результатом!</p>
         <div class="row">
@@ -262,18 +265,25 @@
 
     <!-- JavaScript и AOS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<!--     <script src="js/aos-master/dist/aos.js"></script>
- -->    <script>
+    <!--     <script src="js/aos-master/dist/aos.js"></script>
+ -->
+    <script>
 
-/*         AOS.init({ duration: 1000, once: true });
- */        // document.addEventListener("scroll", function () {
+        /*         AOS.init({ duration: 1000, once: true });
+         */        // document.addEventListener("scroll", function () {
         //     const parallaxContainer = document.querySelector(".parallax-container");
         //     const scrollPosition = window.scrollY;
         //     parallaxContainer.style.backgroundPositionY = `${scrollPosition * 0.1}px`;
         // });
 
+        document.addEventListener("scroll", function () {
+            const scrollPosition = window.scrollY;
+            const parallaxImage = document.querySelector(".parallax-image");
 
-       
+            // Устанавливаем смещение изображения в зависимости от прокрутки
+            parallaxImage.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+        });
+
     </script>
 </body>
 
