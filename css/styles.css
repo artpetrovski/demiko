@@ -47,7 +47,7 @@ body {
 
 .parallax-container {
   position: relative;
-  background-image: url("../img/index/main-screen.webp");
+  background-image: url("../img/index/main-screen.webp") ;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,6 +55,11 @@ body {
   color: white;
   overflow: hidden;
   background-attachment: fixed;
+}
+@supports (-webkit-overflow-scrolling: touch) {
+  .parallax-container {
+      background-attachment: scroll; /* Fallback for iOS Safari */
+  }
 }
 .parallax-container .parallax-content {
   position: absolute;
