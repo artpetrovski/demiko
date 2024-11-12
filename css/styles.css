@@ -182,15 +182,15 @@ h2 {
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2em;
+  .parallax-content h1 {
+    font-size: 2rem;
   }
 
-  .hero p {
+  .parallax-content p {
     font-size: 1rem;
   }
 
-  .hero .btn {
+  .parallax-content .btn {
     font-size: 1rem;
     padding: 10px 20px;
   }
