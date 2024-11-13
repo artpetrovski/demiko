@@ -55,7 +55,7 @@
                         <a class="nav-link underline-one" href="index.html#reviews">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link underline-one" href="index.html#contacts">Контакты</a>
+                        <a class="nav-link" href="index.html#works">Наши работы</a>
                     </li>
                 </ul>
                 <a href="tel:+375298273658" class="nav-link d-none d-lg-block phone-header underline-one">
@@ -104,14 +104,14 @@
                     <a class="nav-link" href="index.html#reviews">Отзывы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#contacts">Контакты</a>
+                    <a class="nav-link" href="index.html#works">Наши работы</a>
                 </li>
             </ul>
         </div>
     </div>
 
     <!-- Главный экран -->
-    <div class="parallax-container">
+    <div class="parallax-container" data-aos="fade">
         <img src="img/index/main-screen.webp" alt="Профессиональная химчистка" class="parallax-image">
         <div class="parallax-content">
             <h1>Профессиональная химчистка</h1>
@@ -121,7 +121,7 @@
     </div>
 
     <!-- Услуги -->
-    <section id="services" class="container my-5">
+    <section id="services" class="container my-5" data-aos="fade" data-aos-anchor-placement="top-bottom">
         <h2 class="text-center mb-4">Наши услуги</h2>
         <div class="row">
             <div class="col-12 col-sm-6 mb-3">
@@ -175,70 +175,131 @@
     </section>
 
     <!-- Блок Почему выбирают нас -->
-    <section id="why-us" class="container-fluid my-5">
+    <section id="why-us" class="container-fluid py-5 bg-light" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
             <h2 class="text-center mb-4">Почему выбирают нас</h2>
-
             <div class="row align-items-center">
-
-                <div class="col-md-12 col-lg-5">
+                <!-- Список преимуществ -->
+                <div class="col-md-12 col-lg-6">
                     <ul class="list-unstyled">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-check-circle-fill  me-2" style="font-size: 1.5em;"></i>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="bi bi-truck text-danger me-3" style="font-size: 1.8em;"></i>
                             <div>
-                                <strong class="advantages">Высокое качество услуг</strong>
-                                <p>Мы используем современные методы и оборудование для глубокой и безопасной чистки.</p>
+                                <strong class="advantages">Бесплатная доставка и самовывоз</strong>
+                                <p>Удобный сервис, который экономит ваше время и делает процесс ещё проще.</p>
                             </div>
                         </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-check-circle-fill  me-2" style="font-size: 1.5em;"></i>
-                            <div>
-                                <strong class="advantages">Экологичные составы</strong>
-                                <p>Применяем только гипоаллергенные и безопасные для здоровья средства.</p>
-                            </div>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-check-circle-fill  me-2" style="font-size: 1.5em;"></i>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="bi bi-cash-coin text-success me-3" style="font-size: 1.8em;"></i>
                             <div>
                                 <strong class="advantages">Доступные цены</strong>
-                                <p>Предлагаем привлекательные цены с возможностью скидок для постоянных клиентов.</p>
+                                <p>Предлагаем конкурентные цены и выгодные скидки для постоянных клиентов.</p>
                             </div>
                         </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-check-circle-fill  me-2" style="font-size: 1.5em;"></i>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="bi bi-award-fill text-primary me-3" style="font-size: 1.8em;"></i>
                             <div>
-                                <strong class="advantages">Профессиональная команда</strong>
-                                <p>Опытные специалисты выполнят чистку быстро и качественно.</p>
+                                <strong class="advantages">Высокое качество услуг</strong>
+                                <p>Используем передовое оборудование и методики для глубокой чистки, обеспечивая видимый результат.</p>
                             </div>
                         </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="bi bi-brightness-high text-warning me-3" style="font-size: 1.8em;"></i>
+                            <div>
+                                <strong class="advantages">Экологичные составы</strong>
+                                <p>Применяем безопасные, гипоаллергенные средства, чтобы защитить ваше здоровье и природу.</p>
+                            </div>
+                        </li>
+                
+                     
                     </ul>
                 </div>
-                <!-- Фотография справа -->
-                <div class="col-md-12 col-lg-7">
-                    <img src="img/index/why-us.webp" alt="Почему выбирают нас" class="img-fluid rounded ">
+                <!-- Изображение справа -->
+                <div class="col-md-12 col-lg-6">
+                    <img src="img/index/why-us.webp" alt="Почему выбирают нас" class="img-fluid rounded shadow w-100 h-100">
                 </div>
-
             </div>
         </div>
     </section>
-
-
-    <!-- Блок Отзывы -->
-    <section id="reviews" class="container my-5">
-        <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
-        <p class="text-center">Наши клиенты всегда остаются довольны результатом!</p>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
-            <div class="col-lg-4 col-md-6 mb-3"><img class="card-img" src="img/index/сarpet.webp" alt=""></div>
+    
+ <!-- Блок Отзывы -->
+<!-- Блок Отзывы с изображениями отзыва -->
+<section id="reviews" class="container my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+    <p class="text-center mb-5">Наши клиенты всегда остаются довольны результатом!</p>
+    <div class="row">
+        <div class="col-6  col-lg-3 mb-4">
+            <div class="review-image-wrapper">
+                <img src="img/reviews/review3.webp" class="review-img" alt="Отзыв клиента 1">
+            </div>
         </div>
-    </section>
+        <div class="col-6  col-lg-3 mb-4">
+            <div class="review-image-wrapper">
+                <img src="img/reviews/review1.webp" class="review-img" alt="Отзыв клиента 4">
+            </div>
+        </div>
+        <div class="col-6  col-lg-3 mb-4">
+            <div class="review-image-wrapper">
+                <img src="img/reviews/review5.webp" class="review-img" alt="Отзыв клиента 5">
+            </div>
+        </div>
+        <div class="col-6  col-lg-3 mb-4">
+            <div class="review-image-wrapper">
+                <img src="img/reviews/review6.webp" class="review-img" alt="Отзыв клиента 6">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Контакты -->
-    <section id="contacts" class="container my-5">
+
+    
+   <!-- Блок Наши работы с автоматическим слайдером -->
+   <section id="works" class="container my-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <h2 class="text-center mb-4">Наши работы</h2>
+    <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <img src="img/works/work1.webp" class="img-fluid rounded shadow" alt="Работа 1">
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <img src="img/works/work2.webp" class="img-fluid rounded shadow" alt="Работа 2">
+                    </div>
+                    <div class="d-none d-lg-block col-lg-4">
+                        <img src="img/works/work3.webp" class="img-fluid rounded shadow" alt="Работа 3">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <img src="img/works/work4.webp" class="img-fluid rounded shadow" alt="Работа 4">
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <img src="img/works/work5.webp" class="img-fluid rounded shadow" alt="Работа 5">
+                    </div>
+                    <div class="d-none d-lg-block col-lg-4">
+                        <img src="img/works/work6.webp" class="img-fluid rounded shadow" alt="Работа 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+    </div>
+</section>
+
+
+
+    <!-- Карта -->
+    <section id="contacts" class="container my-5" >
         <h2 class="text-center mb-4">Контакты</h2>
         <p class="text-center">Позвоните нам или напишите для получения консультации.</p>
     </section>
@@ -265,16 +326,12 @@
 
     <!-- JavaScript и AOS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!--     <script src="js/aos-master/dist/aos.js"></script>
- -->
+        <script src="js/aos-master/dist/aos.js"></script>
+
     <script>
 
-        /*         AOS.init({ duration: 1000, once: true });
-         */        // document.addEventListener("scroll", function () {
-        //     const parallaxContainer = document.querySelector(".parallax-container");
-        //     const scrollPosition = window.scrollY;
-        //     parallaxContainer.style.backgroundPositionY = `${scrollPosition * 0.1}px`;
-        // });
+             AOS.init({ duration: 1200, once: false });
+            
 
         document.addEventListener("scroll", function () {
             const scrollPosition = window.scrollY;
